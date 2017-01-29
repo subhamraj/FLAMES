@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>FLAMES by Subham choudhury</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type='text/javascript' src='flames.js'></script>
+	<style>
+		html {
+			background: url("image/b.jpg") no-repeat center center fixed;
+			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+			
+		}
+		.resp_code{
+			background: url("image/c.jpg") no-repeat center center fixed;
+			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+  			border: 2px solid black;
+		}
+		.resp_code h2{
+			    font-family: cursive;
+   			 color: crimson;
+   			 font-size: 35px;
+		}	
+	</style>
+	</head>
+	<body>
+		<div class='resp_code' style="    margin-top: 100px;">
+    		<div align='center'><h2>FLAMES by Subham choudhury</h2></div>
+   			 <form name=first>
+            <div class='love' id='maindiv'>
+               <div class='group' style='padding:15px;'>
+                    <div class='p_name group'>
+                        <b>Your Name</b>
+                        <input value='' name=name onkeyup=checnum(this) type=text class='txt' id='yname'>
+                    </div>    <br>              
+                    <div class='group p_name' align='center'> <b>Lover's Name </b>                                   
+                        <input value='' name=name1 onkeyup=checnum(this) type=text class='txt' id='pname'>
+                    </div>
+					 <div name=n1 id=nam1></div>
+					<div style='font-weight:bold;' id='msg'></div>
+                </div>
+                <div class='but_por'>
+                    <input name=calculate type=button value=FLAMES onclick=calc() class='buttonMini'>
+                    <input type=reset value=Reset onclick='clear_all()' class='buttonMini'>
+			<span  align='center' style="font-size: 10px;color: #dadada;" id="dumdiv">
+            </span>
+                </div>
+            </div>
+    
+            <div id='tablid' class='clearfix'>
+                <div class='group' align='center'>
+                    <div class='love_result'>
+                        <span name=n1 id=nam1></span>
+                        <img name=pic1 id=pic1 width=0 height=0 src=image/loading.gif>
+                    </div>
+                </div>
+            </div>
+    </form>
+</div>
+</body>
+</html>
